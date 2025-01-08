@@ -130,10 +130,6 @@ aside {
 
         & #more {
             margin-bottom: 2rem;
-
-            & img {
-                width: 50%;
-            }
         }
     }
 }
