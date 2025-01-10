@@ -20,14 +20,17 @@
 
 .text-2xl {
     font: var(--h1);
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
 }
 
 .text-xl {
     font: var(--h2);
+    font-size: clamp(0.5rem, 2rw, 1rem);
 }
 
 .text-lg {
     font: var(--h3);
+    font-size: clamp(0.5rem, 2rw, 0.875rem);
 }
 
 .text-sm {

@@ -65,6 +65,12 @@ section header {
         grid-template-columns: repeat(4, 1fr);
     }
 
+    .see-all {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     img {
         height: 160px;
     }
@@ -88,6 +94,12 @@ section header {
 #ai {
     grid-area: ai;
 
+    .see-all {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     img {
         width: 176px;
         aspect-ratio: 1/1;
@@ -106,7 +118,6 @@ aside {
 #more {
     margin-top: 32px;
 
-
     h3 {
         margin-top: 8px;
     }
@@ -118,7 +129,7 @@ aside {
     }
 }
 
-@media (width <=700px) {
+@media (width <= 700px) {
     .grid {
         display: flex;
         flex-direction: column;
@@ -127,9 +138,25 @@ aside {
             display: block;
             margin-top: 8px;
         }
+    }
 
-        & #more {
-            margin-bottom: 2rem;
+    .more-aside{
+        display: flex;
+        flex-direction: row;
+        
+        & img {
+            margin-right: 60px;
         }
+    }
+    .more-aside:nth-child(5) {
+        margin-bottom: 24px;
+    }
+
+}
+
+@media (width <= 375px) {
+    .see-all {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
