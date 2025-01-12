@@ -39,6 +39,10 @@
     cursor: pointer;
 }
 
+#secondary a:hover {
+    color: var(--brand-color);
+}
+
 @media (width <= 700px) {
     #primary {
         display: flex;
