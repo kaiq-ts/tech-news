@@ -65,4 +65,8 @@
     #secondary.open {
         display: flex;
     }
+
+    #secondary a:hover {
+        color: var(--brand-color);
+    }
 }
